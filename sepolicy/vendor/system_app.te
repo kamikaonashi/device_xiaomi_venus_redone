@@ -1,0 +1,6 @@
+allow system_app sysfs:file { setattr getattr write open read };
+allow system_app vendor_sysfs_graphics:dir { search setattr getattr write open read };
+allow system_app vendor_sysfs_graphics:file write;
+allow system_app privapp_data_file:dir { search };
+allow system_app system_server:file { write read };
+allow system_app sysfs_thermal:file write;
