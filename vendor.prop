@@ -282,3 +282,9 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Tame the Snap 888
+ro.config.hw_power_saving=1
+ro.ril.power_collapse=1
+ro.ril.disable.power.collapse=0
+pm.sleep_mode=1
