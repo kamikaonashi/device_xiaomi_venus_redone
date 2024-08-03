@@ -384,7 +384,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr
+    android.hardware.power-service.pixel-libperfmgr \
+    libqti-perfd-client
 
 PRODUCT_PACKAGES += \
     libssl.vendor
@@ -460,6 +461,7 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/qcom-caf/common/libqti-perfd-client \
     hardware/xiaomi \
     hardware/google/interfaces \
     hardware/google/pixel
